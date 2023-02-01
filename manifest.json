@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "description": "Dizipal güncel adresi için yönlendirici.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Dizipal Güncel Adres",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Dizipal Güncel",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
