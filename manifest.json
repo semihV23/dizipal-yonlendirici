@@ -2,7 +2,7 @@
   "name": "Dizpal Güncel Adres",
   "short_name": "Dizipal",
   "description": "Dizipal Uygulaması",
-  "start_url": "/",
+  "start_url": "/install.html",
   "lang": "tr-tr",
   "display": "standalone",
   "icons": [
