@@ -1,0 +1,22 @@
+<html>
+  <title>Dizipal Güncel Adres</title>
+  <body>
+    <div>
+      <pre id="response" style="display: none"></pre>
+      <pre id="info">Yönlendiriliyor...</pre>
+    </div>
+    <script>
+      fetch("https://sessizolgizli.xyz/api/get-pal-apps", { method: "GET", redirect: "follow" })
+        .then((response) => response.json())
+        .then((result) => {
+          document.getElementById("response").innerHTML = JSON.stringify(result, undefined, 2);
+          var dizipalURL = result[0]["address"];
+          window.location.replace(dizipalURL);
+        })
+        .catch((error) => {
+          console.log("error", error);
+          document.getElementById("info").innerHTML = "<b>Hata</b>\n" + error;
+        });
+    </script>
+  </body>
+</html>
