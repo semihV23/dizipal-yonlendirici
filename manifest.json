@@ -4,7 +4,7 @@
   "description": "Dizipal Uygulaması",
   "start_url": "/",
   "lang": "tr-tr",
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
     {
       "src": "icon-192x192.png",
