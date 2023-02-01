@@ -9,11 +9,12 @@
     </script>
   </head>
   <body>
-    <div>
+    <div id="container">
       <pre id="response" style="display: none"></pre>
       <p id="info">Yönlendiriliyor...</p>
       <p>Yasal: Bu site sadece yönlendirme amaçlıdır ve yönlendirilen sitenin adresi zamanla değişebilir. Sitenin içeriğini kontrol etmekle yükümlü değiliz.</p>
     </div>
+    <div id="site"></div>
     <script>
       fetch("https://sessizolgizli.xyz/api/get-pal-apps", { method: "GET", redirect: "follow" })
         .then((response) => response.json())
