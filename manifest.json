@@ -1,16 +1,15 @@
 {
-  "background_color": "#ffffff",
-  "description": "Dizipal güncel adresi için yönlendirici.",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "Dizipal Güncel Adres",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Dizipal Güncel",
+  "name": "Dizpal Güncel Adres",
+  "short_name": "Dizipal",
+  "description": "Dizipal Uygulaması",
   "start_url": "/",
-  "theme_color": "#ffffff",
-  "categories": [],
-  "screenshots": [],
-  "icons": [],
-  "shortcuts": []
+  "lang": "tr-tr",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
 }

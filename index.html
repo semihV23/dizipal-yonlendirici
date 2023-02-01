@@ -1,13 +1,18 @@
 <html>
-  <title>Dizipal Güncel Adres</title>
+  <head>
+    <title>Dizipal Güncel Adres</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      navigator.serviceWorker.register("service-worker.js");
+    </script>
+  </head>
   <body>
     <div>
       <pre id="response" style="display: none"></pre>
-      <pre id="info">Yönlendiriliyor...</pre>
-      <pre>
-        Yasal:
-        Bu site sadece yönlendirme amaçlıdır ve yönlendirilen sitenin adresi zamanla değişebilir. Sitenin içeriğini kontrol etmekle yükümlü değiliz.
-      </pre>
+      <p id="info">Yönlendiriliyor...</p>
+      <p>Yasal: Bu site sadece yönlendirme amaçlıdır ve yönlendirilen sitenin adresi zamanla değişebilir. Sitenin içeriğini kontrol etmekle yükümlü değiliz.</p>
     </div>
     <script>
       fetch("https://sessizolgizli.xyz/api/get-pal-apps", { method: "GET", redirect: "follow" })
